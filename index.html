@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio Project</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <p id="start">Pay Attention.<br>Listen Carefully.</p>
+    <button type="button" name="button" id="buttonNext0" class="buttonNext" onclick="buttonNext0Clicked()">Next.</button>
+    <audio controls onended="a1Finished()" id="a1" class="audio">
+      <source src="audio/stair1.wav" type="audio/wav">
+    </audio>
+    <audio controls onended="a11Finished()" id="a11" class="audio">
+      <source src="audio/floor1_with_voice_mixdown.wav" type="audio/wav" >
+    </audio>
+    <button type="button" name="button" id="buttonNext1" class="buttonNext" onclick="buttonNext1Clicked()">Next.</button>
+
+    <audio controls onended="a2Finished()" id="a2" class="audio">
+      <source src="audio/stair2.wav" type="audio/wav">
+    </audio>
+    <audio controls onended="a12Finished()" id="a12" class="audio">
+      <source src="audio/floor2_with_voice_mixdown.wav" type="audio/wav" >
+    </audio>
+    <button type="button" name="button" id="buttonNext2" class="buttonNext" onclick="buttonNext2Clicked()">Next.</button>
+
+    <audio controls onended="a3Finished()" id="a3" class="audio">
+      <source src="audio/stair3.wav" type="audio/wav">
+    </audio>
+    <audio controls onended="a13Finished()" id="a13" class="audio">
+      <source src="audio/floor3_with_voice_mixdown.wav" type="audio/wav" >
+    </audio>
+    <button type="button" name="button" id="buttonNext3" class="buttonNext" onclick="buttonNext3Clicked()">Next.</button>
+
+    <audio controls onended="a4Finished()" id="a4" class="audio">
+      <source src="audio/stair4_mixdown.wav" type="audio/wav">
+    </audio>
+    <audio controls onended="a14Finished()" id="a14" class="audio">
+      <source src="audio/floor4_with_voice_mixdown.wav" type="audio/wav" >
+    </audio>
+    <button type="button" name="button" id="buttonNext4" class="buttonNext" onclick="buttonNext4Clicked()">Next.</button>
+
+    <!-- <audio controls onended="a5Finished()" id="a5" class="audio">
+      <source src="audio/stair5_mixdown.wav" type="audio/wav">
+    </audio>
+    <audio controls onended="a15Finished()" id="a15" class="audio">
+      <source src="audio/Pingpong.wav" type="audio/wav" >
+    </audio>
+    <button type="button" name="button" id="buttonNext5" class="buttonNext" onclick="buttonNext5Clicked()">Next.</button> -->
+
+
+
+
+    <p id="question">Have you been listening carefully enough?</p>
+    <button type="button" name="button" id="buttonNext00" class="buttonNext" onclick="buttonNext00Clicked()">Next.</button>
+
+    <p id="afterQuestion">Put it all together...</p>
+    <button type="button" name="button" id="buttonNext000" class="buttonNext" onclick="buttonNext000Clicked()">Next.</button>
+
+    <div id="volumeChangeGroup">
+      <div id="justForShowingTrack1">
+        <audio controls loop id="track1">
+          <source src="audio/combine_all_four_mixdown.wav" type="audio/wav">
+        </audio>
+      </div>
+      <audio controls loop id="track2">
+        <source src="audio/Reversed-multitrack_mixdown.wav" type="audio/wav">
+      </audio>
+    </div>
+    <button type="button" name="button" id="volumeBtn" class="volumeBtn" onclick="volumeBtnClicked()">Listen More Carefully.</button>
+    <button type="button" name="button" id="buttonNext0000" class="buttonNext" onclick="buttonNext0000Clicked()">Next.</button>
+
+    <audio controls loop id="rTrack">
+      <source src="audio/Reversed-multitrack_mixdown.wav" type="audio/wav">
+    </audio>
+
+    <p id="question2">Have you been listening carefully enough?</p>
+    <button type="button" name="button" id="reverseBtn1" class="reverseBtn" onclick="reverseBtn1Clicked()">Listen More Carefully.</button>
+    <button type="button" name="button" id="reverseBtn2" class="reverseBtn" onclick="reverseBtn2Clicked()">Listen More Carefully.</button>
+    <button type="button" name="button" id="reverseBtn3" class="reverseBtn" onclick="reverseBtn3Clicked()">Listen More Carefully.</button>
+    <button type="button" name="button" id="reverseBtn4" class="reverseBtn" onclick="reverseBtn4Clicked()">Listen More Carefully.</button>
+
+    <img id="picStep" src="img/step1.png" alt="step1" width="600px">
+    <audio controls id="step1" class="steps" onended="step1Ended()">
+      <source src="audio/voice/5 steps/step1.wav" type="audio/wav">
+    </audio>
+    <audio controls id="step2" class="steps" onended="step2Ended()">
+      <source src="audio/voice/5 steps/step2.wav" type="audio/wav">
+    </audio>
+    <audio controls id="step3" class="steps" onended="step3Ended()">
+      <source src="audio/voice/5 steps/step3.wav" type="audio/wav">
+    </audio>
+    <audio controls id="step4" class="steps" onended="step4Ended()">
+      <source src="audio/voice/voice_all.wav" type="audio/wav">
+    </audio>
+
+    <button type="button" name="button" id="buttonNext00000" class="buttonNext" onclick="buttonNext00000Clicked()">Next.</button>
+
+    <audio controls onended="a6Finished()" id="a6" class="audio">
+      <source src="audio/stair5_mixdown.wav" type="audio/wav">
+    </audio>
+
+    <p id="narrate0">Wind. Traffic.<br>Rooftop.</p>
+    <audio controls loop id="rooftopTrack" class="audio">
+      <source src="audio/rooftop_mixdown.wav" type="audio/wav">
+    </audio>
+    <button type="button" name="button" id="buttonJump" class="buttonNext" onclick="buttonJumpClicked()">Jump!</button>
+    <audio controls id="trans" class="audio">
+      <source src="audio/trans.wav" type="audio/wav">
+    </audio>
+
+    <p id="end">End</p>
+    <p id="make">Made by William Zhang & Freya Zhuang.<br> <br>Special thanks to Rayman He.</p>
+    <audio controls loop id="ending" class="audio">
+      <source src="audio/ending.mp3" type="audio/mpeg">
+    </audio>
+    <script type="text/javascript" src="js/script.js">
+    </script>
+  </body>
+</html>
