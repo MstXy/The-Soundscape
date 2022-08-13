@@ -4,7 +4,7 @@
 
 An interactive audio project on stress and stress-relief. 
 
-### Project Link: https://mstxy.github.io/Music-Treadmill/
+### Project Link: https://mstxy.github.io/The-Soundscape/
 
 Our project is about a person climbing up a flat building, encountering different sounds with some horror features on every floor. He will find some words hidden in the background of the sounds, by first playing all these sounds together and then playing it reversely, a message will show up, saying – “You are trapped in a dream, the only solution is to JUMP.” And he realizes that he is in a dream. That’s when he reaches the top floor – the rooftop of the flat, and then he knows, he should jump off the roof.
 
